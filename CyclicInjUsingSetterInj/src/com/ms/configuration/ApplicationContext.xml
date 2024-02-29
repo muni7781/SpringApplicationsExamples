@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- bean class -->
+  <bean id="a1" class="com.ms.beans.A">
+  <property name="id" value="1"></property>
+  <property name="name" value="Muni"></property>
+  <property name="b" ref="b1"></property>
+  </bean>
+  
+  <!-- bean class -->
+  <bean id="b1" class="com.ms.beans.B">
+  <property name="location" value="TIRUPATI"></property>
+  <property name="a" ref="a1"></property>
+  </bean>
+ 
+  
+  </beans>
