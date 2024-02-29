@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- Dependent -->
+  <bean id="Cm" class="com.nt.target.CourseMaterial">
+  <constructor-arg name="faculty" value="NATARAJ"></constructor-arg>
+  <constructor-arg name="coursename" value="JAVA"></constructor-arg>
+  </bean>
+  <!-- Target -->
+  <bean id="Stu" class="com.nt.dependent.Student">
+  <constructor-arg name="name" value="Muni"></constructor-arg>
+  <constructor-arg name="rollno" value="222"></constructor-arg>
+  <constructor-arg name="marks" value="6612"></constructor-arg>
+  <constructor-arg name="subject" value="ENGLISH"></constructor-arg>
+  <constructor-arg name="values">
+  <list>
+  <value>Muni</value>
+  <value>233</value>
+  <value>jkjk</value>
+  </list>  
+  </constructor-arg>
+  <constructor-arg name="material" ref="Cm"></constructor-arg>
+  
+  </bean>
+  
+  
+  
+  </beans>
