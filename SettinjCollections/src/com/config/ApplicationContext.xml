@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean id="dm" class="com.target.beans.Demo2">
+ <property name="id" value="1"></property>
+ <property name="subject" value="Maths"></property>
+ <property name="mobile" value="6302"></property>
+ 
+ <property name="name">
+ <list>
+ <value>nikil</value>
+ <value>manoj</value>
+ <value>muni</value> 
+ </list>
+ </property>
+ 
+ <property name="city">
+ <set>
+ <value>TPt</value>
+ <value>HYd</value>
+ <value>Bng</value>
+ </set>
+ </property>
+ 
+ <property name="dict">
+ <map>
+ <entry key="maths" value="99"></entry>
+ <entry key="Science" value="78"></entry>
+ <entry key="Social" value="88"></entry>
+ </map>
+ </property>
+ 
+ 
+ 
+ </bean>
+  
+  </beans>
