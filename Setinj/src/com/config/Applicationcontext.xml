@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- Dependent class !-->
+  
+  <bean id="pay" class="com.nt.beans.PhonePay" >
+  <property name="transid" value="3er456hi98h1"></property>
+  <property name="bankname" value="UNion bank of india"></property>
+  
+  </bean>
+  
+  <!--Target class !-->
+  
+  <bean id="fpk" class="com.nt.beans.Flipkart">
+  <property name="id" value="9b75"></property>
+  <property name="customername" value="ASUS solutions"></property>
+  <property name="location" value="HYDERABAD"></property>
+  <property name="phnpay" ref="pay"></property>
+  
+  </bean>
+  
+  </beans>
