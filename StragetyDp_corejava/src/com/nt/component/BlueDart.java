@@ -1,5 +1,4 @@
 package com.nt.component;
-
 //Dependent class
 public final class BlueDart implements Courier 
 {
@@ -7,11 +6,9 @@ public final class BlueDart implements Courier
 	{  
 		System.out.println("BlueDart::0-param constructor exceuted");
 	}
-
 	@Override
 	public String deliever(int oid) 
 	{
 		return "Delivering"+oid+"order id products using BLueDart";
 	}
-
 }
