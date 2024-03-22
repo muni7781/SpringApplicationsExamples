@@ -2,10 +2,10 @@ package com.nt.target;
 
 public class Person 
 {
-	private int pid;
-	private String pname;
-	private String paddrs;
-	private String income;
+	public int pid;
+	public String pname;
+	public String paddrs;
+	public String income;
 	
 	public Person(int pid, String pname, String paddrs, String income) 
 	{

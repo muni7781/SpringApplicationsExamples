@@ -5,7 +5,7 @@
   https://www.springframework.org/schema/beans/spring-beans.xsd">
   <!-- Dependent class !-->
   
-  <bean id="pay" class="com.nt.beans.PhonePay" >
+  <bean id="pay" class="com.nt.beans.PhonePay">
   <property name="transid" value="3er456hi98h1"></property>
   <property name="bankname" value="UNion bank of india"></property>
   
@@ -13,7 +13,7 @@
   
   <!--Target class !-->
   
-  <bean id="fpk" class="com.nt.beans.Flipkart">
+  <bean id="fpk" class="com.nt.beans.Flipkart" >
   <property name="id" value="9b75"></property>
   <property name="customername" value="ASUS solutions"></property>
   <property name="location" value="HYDERABAD"></property>

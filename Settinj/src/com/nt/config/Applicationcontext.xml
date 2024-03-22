@@ -5,7 +5,7 @@
   https://www.springframework.org/schema/beans/spring-beans.xsd">
   <bean id="Per" class="com.nt.target.Person">
   <constructor-arg name="pname" value="Muni"></constructor-arg>
-  <constructor-arg name="income" value="30000"></constructor-arg>
+  <constructor-arg name="income" value="-30000"></constructor-arg>
   <constructor-arg name="paddrs" value="hyd"></constructor-arg>
   <constructor-arg name="pid" value="1"></constructor-arg>
   </bean>
